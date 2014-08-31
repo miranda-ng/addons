@@ -1,3 +1,7 @@
+Updated by Robyer <robyer@seznam.cz, 31.8.2014
+
+--------------------------------------------------
+
 Title: Facebook IEView Template for Miranda IM
 By: hummer
 Contact: homer2k@gmx.net
@@ -48,6 +52,9 @@ $('.message:last').findAttachment({
 
 --------------------------------------------------
 Version info:
+0.4 (31.8.2014)
+- Fix detecting image extension in URLs with parameters
+
 0.3 (19.03.2012)
 - Added video title/description
 - Implemented embedly. (Visit www.embed.ly)

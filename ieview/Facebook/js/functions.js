@@ -7,7 +7,7 @@
         zoomIn:         1.8,            // multiplier image zoom in
         zoomOutVid:     0.8,            // multiplier video zoom out
         zoomInVid:      1.2,            // multiplier video zoom in
-        imgExts:        ['.bmp', '.gif', '.jpg', '.png', '.xbm', 'jpeg'],  // image extensions
+        imgExts:        ['bmp', 'gif', 'jpg', 'png', 'xbm', 'jpeg'],  // image extensions
         checkYoutube:   true,           // check for youtube videos - true/false
         checkImages:    true,           // check for images - true/false
         checkAlt:       true,           // check for alternate videos, visit www.embed.ly for more information
@@ -56,16 +56,17 @@
                     var $link = $(this);
                     
                     // Check for images
-                    var $urlExt = $url.substr($url.length - 4, 4).toLowerCase();
                     if(O.checkImages) {
-                        $.each(O.imgExts, function(i, extension) {
-                            if(extension == $urlExt) {
-                                var ctrl  = '<a title="view image" class="tgl sicon fb-img"></a>';
-                                var cont = '<a href="' + $url + '" class="image"><img width="' + O.prevImgSize + '" src="' + $url + '" alt="' + $url + '"></a>';
-                                var html = methods.buildViewer(ctrl, cont, 'image');
-                                $attachment.append(html);
-                            }
-                        });
+                        var extPos = $url.lastIndexOf('.') + 1;
+                        var parPos = $url.indexOf('?');
+                        var $urlExt = $url.substr(extPos, parPos == -1 ? undefined : parPos - extPos);
+                        
+                        if ($.inArray($urlExt, O.imgExts)) {
+                            var ctrl  = '<a title="view image" class="tgl sicon fb-img"></a>';
+                            var cont = '<a href="' + $url + '" class="image"><img width="' + O.prevImgSize + '" src="' + $url + '" alt="' + $url + '"></a>';
+                            var html = methods.buildViewer(ctrl, cont, 'image');
+                            $attachment.append(html);
+                        }
                     }
                                        
                     // Check for Youtube Videos
