@@ -61,7 +61,7 @@
                         var parPos = $url.indexOf('?');
                         var $urlExt = $url.substr(extPos, parPos == -1 ? undefined : parPos - extPos);
                         
-                        if ($.inArray($urlExt, O.imgExts)) {
+                        if ($.inArray($urlExt, O.imgExts) !== -1) {
                             var ctrl  = '<a title="view image" class="tgl sicon fb-img"></a>';
                             var cont = '<a href="' + $url + '" class="image"><img width="' + O.prevImgSize + '" src="' + $url + '" alt="' + $url + '"></a>';
                             var html = methods.buildViewer(ctrl, cont, 'image');
