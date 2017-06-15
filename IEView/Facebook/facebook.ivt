@@ -1,0 +1,304 @@
+<!--HTMLStart-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Facebook IEView Template</title>
+    <base href="%base%">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/facebook.css" type="text/css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.fn.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+  </head>
+  <body>
+    
+<!--hMessageIn-->
+    <div class="msg-outer">
+      <div class="msg-top">
+        <div class="avatar">
+        </div>
+        <div class="user-info">
+          <span class="nick">%name%</span><br>
+          <span class="time">%date%</span>
+        </div>
+      </div>
+      <div class="msg-middle history">
+        <div class="time">%time%</div>
+        <div class="message">%text%</div>
+      </div>
+      <script>
+        $('.msg-outer:last').fadeIn();
+        $('.message:last').findAttachment();
+        $('div.avatar:last').showAvatar('%avatar%');
+      </script>
+    </div>
+
+<!--MessageIn-->
+    <div class="msg-outer">
+      <div class="msg-top">
+        <div class="avatar">
+        </div>
+        <div class="user-info">
+          <span class="nick">%name%</span><br>
+          <span class="time">%date%</span>
+        </div>
+      </div>
+      <div class="msg-middle">
+        <div class="time">%time%</div>
+        <div class="message">%text%</div>
+      </div>
+      <script>
+        $('.msg-outer:last').fadeIn();
+        $('.message:last').findAttachment();
+        $('div.avatar:last').showAvatar('%avatar%');
+      </script>
+    </div>
+    
+<!--hMessageOut-->
+    <div class="msg-outer">
+      <div class="msg-top">
+        <div class="avatar">
+        </div>
+        <div class="user-info">
+          <span class="nick">%name%</span><br>
+          <span class="time">%date%</span>
+        </div>
+      </div>
+      <div class="msg-middle history">
+        <div class="time">%time%</div>
+        <div class="message">%text%</div>
+      </div>
+      <script>
+        $('.msg-outer:last').fadeIn();
+        $('.message:last').findAttachment();
+        $('div.avatar:last').showAvatar('%avatar%');
+      </script>
+    </div>
+
+<!--MessageOut-->
+    <div class="msg-outer">
+      <div class="msg-top">
+        <div class="avatar">
+        </div>
+        <div class="user-info">
+          <span class="nick">%name%</span><br>
+          <span class="time">%date%</span>
+        </div>
+      </div>
+      <div class="msg-middle">
+        <div class="time">%time%</div>
+        <div class="message">%text%</div>
+        <script>
+            $('.msg-outer:last').fadeIn();
+            $('.message:last').findAttachment();
+            $('div.avatar:last').showAvatar('%avatar%');
+        </script>
+      </div>
+    </div>
+
+<!--hMessageInGroupStart-->
+    <div class="msg-outer">
+      <div class="msg-top">
+        <div class="avatar">
+        </div>
+        <div class="user-info">
+          <span class="nick">%name%</span><br>
+          <span class="time">%date%</span>
+        </div>
+      </div>
+      <div class="msg-middle history">
+        <div class="time">%time%</div>
+        <div class="message">%text%</div>
+        <script>
+            $('.msg-outer:last').fadeIn();
+            $('.message:last').findAttachment();
+            $('div.avatar:last').showAvatar('%avatar%');
+        </script>
+      </div>
+      
+<!--hMessageInGroupInner-->
+      <div class="msg-middle history">
+        <div class="time">%time%</div>
+        <div class="message">%text%</div>
+        <script>
+            $('.msg-middle:last').fadeIn();
+            $('.message:last').findAttachment();
+        </script>
+      </div>
+      
+<!--hMessageInGroupEnd-->
+    </div>
+
+<!--hMessageOutGroupStart-->
+    <div class="msg-outer">
+      <div class="msg-top">
+        <div class="avatar">
+        </div>
+        <div class="user-info">
+          <span class="nick">%name%</span><br>
+          <span class="time">%date%</span>
+        </div>
+      </div>
+      <div class="msg-middle history">
+        <div class="time">%time%</div>
+        <div class="message">%text%</div>
+        <script>
+            $('.msg-outer:last').fadeIn();
+            $('.message:last').findAttachment();
+            $('div.avatar:last').showAvatar('%avatar%');
+        </script>
+      </div>
+      
+<!--hMessageOutGroupInner-->
+      <div class="msg-middle hidden history">
+        <div class="time">%time%</div>
+        <div class="message">%text%</div>
+        <script>
+            $('.msg-middle:last').fadeIn();
+            $('.message:last').findAttachment();
+        </script>
+      </div>
+      
+<!--hMessageOutGroupEnd-->
+    </div>
+
+<!--MessageInGroupStart-->
+    <div class="msg-outer">
+      <div class="msg-top">
+        <div class="avatar">
+        </div>
+        <div class="user-info">
+          <span class="nick">%name%</span><br>
+          <span class="time">%date%</span>
+        </div>
+      </div>
+      <div class="msg-middle">
+        <div class="time">%time%</div>
+        <div class="message">%text%</div>
+        <script>
+            $('.msg-outer:last').fadeIn();
+            $('.message:last').findAttachment();
+            $('div.avatar:last').showAvatar('%avatar%');
+        </script>
+      </div>
+      
+<!--MessageInGroupInner-->
+      <div class="msg-middle hidden">
+        <div class="time">%time%</div>
+        <div class="message">%text%</div>
+        <script>
+            $('.msg-middle:last').fadeIn();
+            $('.message:last').findAttachment();
+        </script>
+      </div>
+      
+<!--MessageInGroupEnd-->
+    </div>
+
+<!--MessageOutGroupStart-->
+    <div class="msg-outer">
+      <div class="msg-top">
+        <div class="avatar">
+        </div>
+        <div class="user-info">
+          <span class="nick">%name%</span><br>
+          <span class="time">%date%</span>
+        </div>
+      </div>
+      <div class="msg-middle">
+        <div class="time">%time%</div>
+        <div class="message">%text%</div>
+        <script>
+            $('.msg-outer:last').fadeIn();
+            $('.message:last').findAttachment();
+            $('div.avatar:last').showAvatar('%avatar%');
+        </script>
+      </div>
+      
+<!--MessageOutGroupInner-->
+      <div class="msg-middle hidden">
+        <div class="time">%time%</div>
+        <div class="message">%text%</div>
+        <script>
+            $('.msg-middle:last').fadeIn();
+            $('.message:last').findAttachment();
+        </script>
+      </div>
+      
+<!--MessageOutGroupEnd-->
+    </div>
+    
+<!--File-->
+    <div class="msg-outer">
+      <div class="msg-top">
+        <div class="avatar">
+        </div>
+        <div class="user-info">
+          <span class="nick">%name%</span><br>
+          <span class="time">%date%, %time%</span>
+        </div>
+      </div>
+      <div class="msg-middle">
+        <div class="message icon file">
+          <span class="nick">Filetransfer: </span> <span class="info-txt">%text%</span>
+        </div>
+        <script>
+            $('.msg-outer:last').fadeIn();
+            $('div.avatar:last').showAvatar('%avatar%');
+        </script>
+      </div>
+    </div>
+
+<!--hFile-->
+    <div class="msg-outer">
+      <div class="msg-top">
+        <div class="avatar">
+        </div>
+        <div class="user-info">
+          <span class="nick">%name%</span><br>
+          <span class="time">%date%, %time%</span>
+        </div>
+      </div>
+      <div class="msg-middle history">
+        <div class="message icon file">
+          <span class="nick">Filetransfer: </span> <span class="info-txt">%text%</span>
+        </div>
+        <script>
+            $('.msg-outer:last').fadeIn();
+            $('div.avatar:last').showAvatar('%avatar%');
+        </script>
+      </div>
+    </div>
+
+<!--URL-->
+    <div class="msg-outer url icon">
+      <span class="nick">%name%:</span> <span class="info-txt">%text%</span>
+      <script>$('.msg-outer:last').fadeIn();</script>
+    </div>
+
+<!--hURL-->
+    <div class="msg-outer url icon history">
+      <span class="nick">%name%:</span> <span class="info-txt">%text%</span>
+      <script>$('.msg-outer:last').fadeIn();</script>
+    </div>
+
+<!--Status-->
+    <script>
+    $.fn.writeStatus({
+        name: '%name%',
+        text: '%text%'
+    });
+    </script>
+
+<!--hStatus-->
+    <script>
+    $.fn.writeStatus({
+        name: '%name%',
+        text: '%text%',
+        history: 'history'
+    });    
+    </script>
+
+
+  </body>
+</html>
