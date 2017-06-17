@@ -1,8 +1,8 @@
 # Metro Skin for CList_modern
 
 ## Preview:
-![Preview 1](/clist_preview1.png) 
-![Preview 2](/clist_preview2.png)
+![Preview 1](https://raw.githubusercontent.com/miranda-ng/addons/master/Clist_modern/Metro/clist_preview1.png) 
+![Preview 2](https://raw.githubusercontent.com/miranda-ng/addons/master/Clist_modern/Metro/clist_preview2.png)
 
 ## Comment
 Skin was made to suit Windows 10 dark theme.
