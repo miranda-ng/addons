@@ -1,0 +1,176 @@
+body {
+
+	width: 100%;
+    height: 100%;
+
+    display: block;
+
+	margin: 5px 5px 5px 5px;
+	font-size: 14px;
+	background: #121617;
+	font-family: Segoe UI;
+	color: #FFF;
+	overflow-x: hidden;
+	}
+
+/* HEADER */
+
+#HEADER {
+  z-index: 6;
+  position: absolute;
+  width: expression(document.body.clientWidth + "px");
+  background: url(img/header-bg.png) repeat-x;
+  background-attachment: scroll;
+  display: inline;
+  height: 50px;
+}
+
+.HeaderAvatar {
+  margin-top: -24px;
+  margin-left: 20px;
+  background: url(img/av-bg.png) no-repeat;
+  width: 51px;
+  height: 51px;
+  float: left;
+}
+
+.av_fix {
+  position: relative;
+  top: 3px;
+  left:3px;
+}
+
+.bar-chatting {
+  margin-left: 80px;
+  margin-top: 8px;
+  margin-right: 5px;
+  text-align: left;
+  font: 12px, lighter, Segoe UI;
+  color: #ADADAD;
+}
+	
+.bar-nick {
+  font: 20px, Segoe UI;
+  text-align: left;
+  font-style: bold;
+  color: #ffb74d;
+}
+
+
+html { 
+	width: 100%;
+    height: 100%;
+
+  	scrollbar-3dlight-color: #121617; 
+	scrollbar-arrow-color: #2e2e2e; 
+	scrollbar-darkshadow-color: #121617; 
+	scrollbar-face-color: #2e2e2e; 
+	scrollbar-highlight-color: #121617; 
+  	scrollbar-shadow-color: #121617;
+	} 
+	
+
+
+.Link {
+  font-size: 12px;
+  font-weight: bold; 
+  color:  #15216B;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  word-break: break-all;
+
+}
+
+.Time {
+	text-align: right;
+	font: 9px, lighter, Segoe UI;
+	color: #333333;
+}
+
+.Name {
+	font-size: 1px;
+	color: #2e2e2e;
+	visibility: hidden;
+}
+
+/*
+a:hover {
+	font-size: 13px;
+	color: #990431;
+	text-decoration: underline;
+	}
+*/
+.spacer {
+	width: 100%;
+	height: 0px;
+	border: 0px;
+
+	}
+
+td {
+	font-size: 14px;
+	}
+
+
+.incenter, .intop, .inbottom, .inleft, .inright, .inlefttop, .inrighttop, .inrightbottom, .inleftbottom, .outcenter, .outtop, .outbottom, .outleft, .outright, .outlefttop, .outrighttop, .outrightbottom, .outleftbottom, .othercenter, .othertop, .otherbottom, .otherleft, .otherright, .otherlefttop, .otherrighttop, .otherrightbottom, .otherleftbottom, .statuscenter, .statustop, .statusbottom, .statusleft, .statusright, .statuslefttop, .statusrighttop, .statusrightbottom, .statusleftbottom {
+	min-width: 41px;
+	min-height: 25px;
+	}
+
+.outcenter, .outtop, .outbottom, .outleft, .outright, .outlefttop, .outrighttop, .outrightbottom, .outleftbottom {
+	color: #000;
+	}
+
+.textmargin {
+    display: inline-block;
+    word-break: break-word;
+}
+
+.textmargin img {
+	max-width: 10px;
+}
+
+.minsize .incenter .intop .inbottom .inleft .inright .inlefttop .inrighttop .inrightbottom .inleftbottom .textmargin, .minsize .outcenter .outtop .outbottom .outleft .outright .outlefttop .outrighttop .outrightbottom .outleftbottom .textmargin, .minsize .othercenter .othertop .otherbottom .otherleft .otherright .otherlefttop .otherrighttop .otherrightbottom .otherleftbottom .textmargin, .minsize .statuscenter .statustop .statusbottom .statusleft .statusright .statuslefttop .statusrighttop .statusrightbottom .statusleftbottom .textmargin {
+	padding: 5px 10px 7px 10px;
+	}
+
+.inleft {		background: url(img/in/Left.png) 		repeat-y  left;		}
+.incenter {		background: url(img/in/Middle.png) 		repeat;			}
+.inright {		background: url(img/in/Right.png) 		repeat-y  right;	}
+.intop {		background: url(img/in/Top.png) 		repeat-x  top;		}
+.inbottom {		background: url(img/in/Bottom.png) 		repeat-x  bottom;	}
+.inlefttop {		background: url(img/in/TopLeft.png) 		no-repeat top left;	}
+.inleftbottom {		background: url(img/in/BottomLeft.png) 		no-repeat bottom left;	}
+.inrighttop {		background: url(img/in/TopRight.png)		no-repeat top right;	}
+.inrightbottom {	background: url(img/in/BottomRightArrow.png)	no-repeat bottom right;	}
+
+.outleft {		background: url(img/out/Left.png) 		repeat-y  left;		}
+.outcenter {		background: url(img/out/Middle.png) 		repeat;			}
+.outright {		background: url(img/out/Right.png) 		repeat-y  right;	}
+.outtop {		background: url(img/out/Top.png) 		repeat-x  top;		}
+.outbottom {		background: url(img/out/Bottom.png) 		repeat-x  bottom;	}
+.outlefttop {		background: url(img/out/TopLeft.png) 		no-repeat top left;	}
+.outleftbottom {	background: url(img/out/BottomLeftArrow.png)	no-repeat bottom left;	}
+.outrighttop {		background: url(img/out/TopRight.png)		no-repeat top right;	}
+.outrightbottom {	background: url(img/out/BottomRight.png)	no-repeat bottom right;	}
+
+.otherleft {		background: url(img/other/Left.png) 		repeat-y  left;		}
+.othercenter {		background: url(img/other/Middle.png) 		repeat;			}
+.otherright {		background: url(img/other/Right.png) 		repeat-y  right;	}
+.othertop {		background: url(img/other/Top.png) 		repeat-x  top;		}
+.otherbottom {		background: url(img/other/Bottom.png) 		repeat-x  bottom;	}
+.otherlefttop {		background: url(img/other/TopLeft.png) 		no-repeat top left;	}
+.otherleftbottom {	background: url(img/other/BottomLeft.png)	no-repeat bottom left;	}
+.otherrighttop {	background: url(img/other/TopRight.png)		no-repeat top right;	}
+.otherrightbottom {	background: url(img/other/BottomRight.png)	no-repeat bottom right;	}
+
+.statusleft {		background: url(img/status/Left.png) 		repeat-y  left;		}
+.statuscenter {		background: url(img/status/Middle.png) 		repeat;			}
+.statusright {		background: url(img/status/Right.png) 		repeat-y  right;	}
+.statustop {		background: url(img/status/Top.png) 		repeat-x  top;		}
+.statusbottom {		background: url(img/status/Bottom.png) 		repeat-x  bottom;	}
+.statuslefttop {	background: url(img/status/TopLeft.png)		no-repeat top left;	}
+.statusleftbottom {	background: url(img/status/BottomLeft.png)	no-repeat bottom left;	}
+.statusrighttop {	background: url(img/status/TopRight.png)	no-repeat top right;	}
+.statusrightbottom {	background: url(img/status/BottomRight.png)	no-repeat bottom right;	}

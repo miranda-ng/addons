@@ -1,0 +1,163 @@
+<!--HTMLStart-->
+<html>
+<base href="%base%">
+
+<head>
+	<link rel="stylesheet" href="ichat.css"/>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<script type="text/javascript" src="scripts.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+    	<script type="text/javascript" src="jquery.fn.js"></script>
+    	<script type="text/javascript" src="functions.js"></script>
+
+<style>
+div#Header { 
+	 		left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+  			top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' ); }
+</style>
+</head>
+
+<body class="body">
+
+<div id="Header">
+	<div class="bar-chatting">
+    <span class="bar-nick">%nameIn%</span>
+    </div>
+	<div class="HeaderAvatar">
+    <img class="av_fix" src="%avatarIn%" width="45" height="45" alt="Avatar">
+    </div>
+</div>
+
+
+
+<!--MessageIn-->
+<table cellpadding="0" cellspacing="0">
+<tr><td width="100%" align="left">
+
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td>
+	<td class="minsize">
+	<div class="outcenter">
+	<div class="outtop">
+	<div class="outbottom">
+	<div class="outleft">
+	<div class="outright">
+	<div class="outlefttop">
+	<div class="outrighttop">
+	<div class="outrightbottom">
+	<div class="outleftbottom">
+	<div class="textmargin">%text%</div>
+	</div></div></div></div></div></div></div></div></div></td>
+	
+</td></tr>
+</table>
+</td><td>&nbsp;</td><td width="32" style="vertical-align: center;"><div class="Name">%name%</div><div class="Time">%time%</div></td></tr></table>
+
+<table cellpadding="0" cellspacing="0" class="spacer"><tr><td></td></tr></table>
+
+
+<!--MessageOut-->
+<table cellpadding="0" cellspacing="0">
+<tr><td width="32" style="vertical-align: center;"><div class="Name">%name%</div><div class="Time">%time%</div></td><td>&nbsp;</td><td width="100%">
+
+<table cellpadding="0" cellspacing="0" align="right">
+<tr><td>
+	<td class="minsize">
+	<div class="incenter">
+	<div class="intop">
+	<div class="inbottom">
+	<div class="inleft">
+	<div class="inright">
+	<div class="inlefttop">
+	<div class="inrighttop">
+	<div class="inrightbottom">
+	<div class="inleftbottom">
+	<div class="textmargin">%text%</div>
+	</div></div></div></div></div></div></div></div></div></td>
+
+</td></tr>
+</table>
+
+</td></tr></table>
+
+<table cellpadding="0" cellspacing="0" class="spacer"><tr><td></td></tr></table>
+
+
+
+<!--hMessageIn-->
+<table cellpadding="0" cellspacing="0">
+<tr><td width="100%" align="left">
+
+<table cellpadding="0" cellspacing="0" align="left">
+<tr><td>
+	<td class="minsize">
+	<div class="outcenter">
+	<div class="outtop">
+	<div class="outbottom">
+	<div class="outleft">
+	<div class="outright">
+	<div class="outlefttop">
+	<div class="outrighttop">
+	<div class="outrightbottom">
+	<div class="outleftbottom">
+	<div class="textmargin">%text%</div></div></div></div></div></div></div></div></div></div></td>
+	
+</td></tr>
+</table>
+
+</td><td>&nbsp;</td><td width="32" style="vertical-align: center;"><div class="Name">%name%</div><div class="Time">%time%</div></td></tr></table>
+
+<table cellpadding="0" cellspacing="0" class="spacer"><tr><td></td></tr></table>
+
+
+
+
+<!--hMessageOut-->
+<table cellpadding="0" cellspacing="0">
+<tr><td width="32" style="vertical-align: center;"><div class="Name">%name%</div><div class="Time">%time%</div></td><td>&nbsp;</td><td width="100%">
+
+<table cellpadding="0" cellspacing="0" align="right">
+<tr><td>
+	<td class="minsize">
+	<div class="incenter">
+	<div class="intop">
+	<div class="inbottom">
+	<div class="inleft">
+	<div class="inright">
+	<div class="inlefttop">
+	<div class="inrighttop">
+	<div class="inrightbottom">
+	<div class="inleftbottom">
+	<div class="textmargin">%text%</div></div></div></div></div></div></div></div></div></div></td>
+
+</td></tr>
+</table>
+
+</td></tr></table>
+
+<table cellpadding="0" cellspacing="0" class="spacer"><tr><td></td></tr></table>
+
+
+
+
+<!--File-->
+<div class="Status">%text% <span class="StatusTime">(%time%)</span></div>
+
+<!--hFile-->
+<div class="Status">%text% <span class="StatusTime">(%time%)</span></div>
+
+<!--URL-->
+<div class="Link">%text% <span class="StatusTime">(%time%)</span></div>
+
+<!--hURL-->
+<div class="Link">%text% <span class="StatusTime">(%time%)</span></div>
+
+<!--Status-->
+<div class="Status">%name% %text% <span class="StatusTime">(%time%)</span></div>
+
+<!--hStatus-->
+<div class="Status">%name% %text% <span class="StatusTime">(%time%)</span></div>
+
+
+</body>
+</html>

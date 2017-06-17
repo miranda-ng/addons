@@ -1,0 +1,56 @@
+[Skin_Description_Section]
+Name=Metro
+SubStyle=Normal
+Author=Pawel 'Aztek' Streciwilk
+Contact=aztek92@gmail.com
+URL=aztek92@gmail.com
+Preview=preview.png
+Description=metro
+SkinFolder=metro
+
+[ModernSkin]
+$Window=sGlyph,Image,back.png,StretchBoth,30,30,22,20,255
+$BTNMinimize1Normal=sGlyph,Image,mini.png,StretchBoth,0,0,0,0,255
+$BTNMinimize1Focused=sGlyph,Image,mini_h.png,StretchBoth,0,0,0,0,255
+$BTNMinimize1Pressed=sGlyph,Image,mini_h.png,StretchBoth,0,0,0,0,255
+$BTNMainMenu1Normal=sGlyph,Image,menu.png,StretchBoth,0,0,0,0,255
+$BTNMainMenu1Focused=sGlyph,Image,menu_h.png,StretchBoth,0,0,0,0,255
+$BTNMainMenu1Pressed=sGlyph,Image,menu_h.png,StretchBoth,0,0,0,0,255
+$BTNSettings1Normal=sGlyph,Image,set.png,StretchBoth,0,0,0,0,255
+$BTNSettings1Focused=sGlyph,Image,set_h.png,StretchBoth,0,0,0,0,255
+$BTNSettings1Pressed=sGlyph,Image,set_h.png,StretchBoth,0,0,0,0,255
+$BTNSound1OnNormal=sGlyph,Image,m_on.png,StretchBoth,0,0,0,0,255
+$BTNSound1OnFocused=sGlyph,Image,m_on_h.png,StretchBoth,0,0,0,0,255
+$BTNSound1OnPressed=sGlyph,Image,m_on_h.png,StretchBoth,0,0,0,0,255
+$BTNSound1OffNormal=sGlyph,Image,m_off.png,StretchBoth,0,0,0,0,255
+$BTNSound1OffFocused=sGlyph,Image,m_off_h.png,StretchBoth,0,0,0,0,255
+$BTNSound1OffPressed=sGlyph,Image,m_off_h.png,StretchBoth,0,0,0,0,255
+
+@0=s$Window:Main,ID=Background
+@1=s$BTNMinimize1Pressed:MButton,ID=Minimize1,Down=1
+@2=s$BTNMinimize1Focused:MButton,ID=Minimize1,Hovered=1
+@3=s$BTNMinimize1Normal:MButton,ID=Minimize1
+@4=s$BTNMainMenu1Pressed:MButton,ID=MainMenu1,Down=1
+@5=s$BTNMainMenu1Focused:MButton,ID=MainMenu1,Hovered=1
+@6=s$BTNMainMenu1Normal:MButton,ID=MainMenu1
+@7=s$BTNSettings1Pressed:MButton,ID=OptionsDialog1,Down=1
+@8=s$BTNSettings1Focused:MButton,ID=OptionsDialog1,Hovered=1
+@9=s$BTNSettings1Normal:MButton,ID=OptionsDialog1
+@10=s$BTNSound1OnPressed:MButton,ID=SoundOnOff,Down=1,Value=1
+@11=s$BTNSound1OnFocused:MButton,ID=SoundOnOff,Hovered=1,Value=1
+@12=s$BTNSound1OnNormal:MButton,ID=SoundOnOff,Value=1
+@13=s$BTNSound1OffPressed:MButton,ID=SoundOnOff,Down=1,Value=0
+@14=s$BTNSound1OffFocused:MButton,ID=SoundOnOff,Hovered=1,Value=0
+@15=s$BTNSound1OffNormal:MButton,ID=SoundOnOff,Value=0
+
+#Minimize1=sPush,CList/ShowHide,-28,3,-6,25,R-R-I,0,0,Hide Window
+#MainMenu1=sPush,CList/ShowMainMenu,4,3,26,25,----I,0,0,Main Menu
+#OptionsDialog1=sPush,Options/OptionsCommand,-52,3,-30,25,R-R-I,0,0,Show Options
+;#SoundOnOff=sSwitch,CList/ToggleSound,Skin/UseSound,b1,-77,3,-55,25,R-R-I,0,0,Enable/disable sounds
+
+[CLUI]
+TopClientMargin=b30
+LeftClientMargin=b5
+RightClientMargin=b5
+BottomClientMargin=b5
+

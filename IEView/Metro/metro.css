@@ -1,0 +1,283 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+  background: url(images/background.jpg) repeat center #000 fixed;
+  text-decoration: none;
+  
+  	
+	html { 
+  	scrollbar-3dlight-color: #2F2F2F; 
+	scrollbar-arrow-color: #808080; 
+	scrollbar-darkshadow-color: #2F2F2F; 
+	scrollbar-face-color: #2F2F2F; 
+	scrollbar-highlight-color: #585858; 
+  	scrollbar-shadow-color: #2F2F2F;
+	} 
+}
+
+/* HEADER */
+
+#HEADER {
+  z-index: 6;
+  position: absolute;
+  width: expression(document.body.clientWidth + "px");
+  background: url(images/header-bg.png) repeat-x;
+  background-attachment: scroll;
+  display: inline;
+  height: 45px;
+}
+
+.HeaderAvatar {
+  margin-top: -24px;
+  margin-right: 20px;
+  background: url(images/av-bg.png) no-repeat;
+  width: 51px;
+  height: 51px;
+  float: right;
+}
+
+.av_fix {
+  position: relative;
+  top: 3px;
+  left:3px;
+}
+
+.bar-chatting {
+  margin-left: 5px;
+  margin-top: 8px;
+  margin-right: 80px;
+  text-align: right;
+  font: 12px, lighter, Segoe UI;
+  color: #ADADAD;
+  text-transform:uppercase;
+}
+	
+.bar-nick {
+  font: 15px, Segoe UI;
+  text-align: right;
+  color: #ff6428;
+  text-transform:uppercase;
+}
+
+
+/* MSGS */
+
+.nameIn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ff6022;
+  padding: 1px 0px 0px 5px;
+  border-top: 1px dashed;
+  border-color: #3b3b3b;
+}
+
+.nameOut {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fe8150;
+  padding: 1px 0px 0px 5px;
+  border-top: 1px dashed;
+  border-color: #3b3b3b;
+  text-decoration: none;
+}
+
+.MessageIn a {
+  color: #ff6428;
+  text-decoration: none;
+}
+
+.MessageIn a:hover a:visited{
+  color: #ff6428f;
+  text-decoration: none;
+}
+
+.MessageOut a {
+  color: #ff6428;
+  text-decoration: none;
+}
+
+.MessageOut a:hover {
+  color: #ff6428;
+  text-decoration: none;
+}
+
+.msg_new_grouped {
+  text-decoration: none;
+}
+
+.message_current{
+  text-decoration: none;
+}
+
+.msg_new_grouped  a {
+  text-decoration: none;
+}
+
+.message_current  a {
+  text-decoration: none;
+}
+
+.Time {
+  float: right;
+  font-family: Tahoma;
+  font-size: 10px;
+  font-weight: normal;
+  color: #616161;
+  margin-right: 7px;
+  padding-top: 3px;
+  padding-bottom: 0px;
+}
+
+.ContentText {
+  font-family: Trebuchet MS;
+  font-size: 12px;
+  font-weight: normal;
+  color: #c4c4c4;
+  padding: 1px 0px 5px 5px;
+  margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+  
+}
+
+.Status {
+  font-family: Trebuchet MS;
+  font-size: 10px;
+  font-weight: bold;
+  color: #ff6428;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.Link {
+  font-family: Trebuchet MS;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ff6428;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.StatusTime {
+  font-family: Tahoma;
+  font-size: 12px;
+  font-weight: normal;
+  color: #616161;
+}
+
+.Img {
+  max-width: 100%;
+}
+
+
+/* PREVIEWS */
+
+.img-viewer {
+  float: left;
+  margin-right: 5px;
+}
+
+.image-prev, .img-controls {
+  display: none;
+}
+
+.image-prev {
+  clear: left;
+}
+
+.image {
+  display: inline-block;
+  clear: left;
+  padding: 0px;
+  border: 1px solid #ff7800;
+}
+
+.image:hover {
+  border-color: #ff7800;
+}
+
+.video-thumb {
+  position: relative;
+  width: 250px;
+  height: 100%;
+}
+
+img.tglVid{
+  position: absolute;
+  margin-top: 17px;
+  left: 0;
+  top: 0;
+}
+
+.video-desc { 
+  font-family: Arial, Helvetica, sans-serif;
+  width: 250px;
+  font-size: 13px;
+}
+
+.video-desc a { 
+  text-decoration: none;
+  color: #ff6428;
+}
+
+.video-desc span {
+  font-size: 11px;
+  display: block;
+  margin-top: 94px;
+  color: gray;
+}
+
+.play-btn {
+ position: absolute;
+ margin-top: 17px;
+ left: 0;
+ top: 0;
+ width: 120px;
+ height: 90px;
+ cursor: pointer;
+ background: url('images/icons/play.png') 5px 58px no-repeat scroll transparent;
+}
+
+.attachment {
+  margin-left: 5px;
+}
+
+/* ICONS */
+.sicon {
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 3px;
+  cursor: pointer;
+} 
+
+.fb-img {
+  background: url('images/icons/img.png') no-repeat;
+  display: block;
+}
+
+.btn-close {
+  background: url('images/icons/close.png') no-repeat;
+  display: block;
+}
+
+.btn-close:hover {
+ background-position: 0 -17px;
+}
+
+.zoomIn, .zoomInVid {
+  background: url('images/icons/zoomin.png') no-repeat;
+  display: block;
+}
+
+.zoomOut, .zoomOutVid {
+  background: url('images/icons/zoomout.png') no-repeat;
+  display: block;
+}

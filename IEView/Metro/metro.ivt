@@ -1,0 +1,177 @@
+<!--HTMLStart-->
+<html>
+
+<head>
+	<base href="%base%">
+	<link href="projectie.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="scripts.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+    	<script type="text/javascript" src="jquery.fn.js"></script>
+    	<script type="text/javascript" src="functions.js"></script>
+
+<style>
+div#Header { 
+	 		left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+  			top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' ); }
+</style>
+</head>
+
+<body>
+<div id="Header">
+	<div class="bar-chatting">
+    <span class="bar-nick">%nameIn%</span>
+    </div>
+	<div class="HeaderAvatar">
+    <img class="av_fix" src="%avatarIn%" width="45" height="45" alt="Avatar">
+    </div>
+</div>
+
+<!--MessageIn-->
+      <div class="MessageIn">
+      <div class="userName">%nameIn%</div>
+			<div class="Time">%time%</div>
+			<div class="ContentText">%text%</div>
+      	<script>$('.ContentText:last').findAttachment();</script>
+	</div>
+
+<!--hMessageIn-->
+	<div class="MessageIn">
+    <div class="nameIn">%name%</div>
+			<div class="Time">%time%</div>
+			<div class="ContentText">%text%</div>
+      	<script>$('.ContentText:last').findAttachment();</script>
+	</div>
+
+<!--MessageOut-->
+	<div class="MessageOut">
+    <div class="nameIn">%name%</div>
+			<div class="Time">%time%</div>
+			<div class="ContentText">%text%</div>
+      	<script>$('.ContentText:last').findAttachment();</script>
+	</div>
+
+<!--hMessageOut-->
+	<div class="MessageOut">
+    <div class="userName">%nameOut%</div>
+			<div class="Time">%time%</div>
+			<div class="ContentText">%text%</div>
+      	<script>$('.ContentText:last').findAttachment();</script>
+	</div>
+
+<!--File-->
+<div class="Status">%text% <span class="StatusTime">(%time%)</span></div>
+
+<!--hFile-->
+<div class="Status">%text% <span class="StatusTime">(%time%)</span></div>
+
+<!--URL-->
+<div class="Link">%text% <span class="StatusTime">(%time%)</span></div>
+
+<!--hURL-->
+<div class="Link">%text% <span class="StatusTime">(%time%)</span></div>
+
+<!--Status-->
+<div class="Status">%name% %text% <span class="StatusTime">(%time%)</span></div>
+
+<!--hStatus-->
+<div class="Status">%name% %text% <span class="StatusTime">(%time%)</span></div>
+
+<!--MessageInGroupStart-->
+	<script type="text/javascript">endGroupMsg();</script>
+
+	<div class="MessageIn">
+			<div class="nameIn">%name%</div>
+			<div id="message_current"></div>
+	</div>
+	
+		<div class="Time">%time%</div>
+		<div class="ContentText">%text%</div>
+      	<script>$('.ContentText:last').findAttachment();</script>
+	</div>
+	<script type="text/javascript">appendGroupMsg();</script>
+
+<!--MessageInGroupInner-->
+	
+		<div class="time">%time%</div>
+		<div class="contentText">%text%</div>
+      	<script>$('.ContentText:last').findAttachment();</script>
+	</div>
+	<script type="text/javascript">appendGroupMsg();</script>
+
+<!--MessageInGroupEnd-->
+	<script type="text/javascript">endGroupMsg();</script>
+
+<!--hMessageInGroupStart-->
+	<script type="text/javascript">endGroupMsg();</script>
+	<div class="messageIn">
+		<div class="nameIn">%name%</div>
+			<div id="message_current"></div>
+	</div>
+	
+		<div class="Time">%time%</div>
+		<div class="ContentText">%text%</div>
+      	<script>$('.ContentText:last').findAttachment();</script>
+	</div>
+	<script type="text/javascript">appendGroupMsg();</script>
+
+<!--hMessageInGroupInner-->
+	
+		<div class="Time">%time%</div>
+		<div class="ContentText">%text%</div>
+      	<script>$('.ContentText:last').findAttachment();</script>
+	</div>
+	<script type="text/javascript">appendGroupMsg();</script>
+
+<!--hMessageInGroupEnd-->
+	<script type="text/javascript">endGroupMsg();</script>
+
+<!--MessageOutGroupStart-->
+	<script type="text/javascript">endGroupMsg();</script>
+	<div class="MessageOut">
+		<div class="nameOut">%name%</div>
+			<div id="message_current"></div>
+	</div>
+		<div class="Time">%time%</div>
+		<div class="ContentText">%text%</div>
+      	<script>$('.ContentText:last').findAttachment();</script>
+	</div>
+	<script type="text/javascript">appendGroupMsg();</script>
+
+<!--MessageOutGroupInner-->
+	
+		<div class="Time">%time%</div>
+		<div class="ContentText">%text%</div>
+      	<script>$('.ContentText:last').findAttachment();</script>
+	</div>
+	<script type="text/javascript">appendGroupMsg();</script>
+
+<!--MessageOutGroupEnd-->
+	<script type="text/javascript">endGroupMsg();</script>
+
+<!--hMessageOutGroupStart-->
+	<script type="text/javascript">endGroupMsg();</script>
+	<div class="MessageOut">
+				<div class="nameOut">%name%</div>
+			<div id="message_current"></div>
+	</div>
+	
+		<div class="Time">%time%</div>
+		<div class="ContentText">%text%</div>
+      	<script>$('.ContentText:last').findAttachment();</script>
+	</div>
+	<script type="text/javascript">appendGroupMsg();</script>
+
+<!--hMessageOutGroupInner-->
+	
+		<div class="Time">%time%</div>
+		<div class="ContentText">%text%</div>
+      	<script>$('.ContentText:last').findAttachment();</script>
+	</div>
+	<script type="text/javascript">appendGroupMsg();</script>
+
+<!--hMessageOutGroupEnd-->
+	<script type="text/javascript">endGroupMsg();</script>
+
+</body>
+
+</html>
