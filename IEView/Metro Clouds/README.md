@@ -1,7 +1,7 @@
 # Metro Clouds Skin for IEView
 
 ## Preview:
-![Preview 1](https://raw.githubusercontent.com/miranda-ng/addons/master/IEView/Metro%20Clouds/preview.png) 
+![Preview 1](/IEView/Metro%20Clouds/preview.png?raw=true) 
 
 ## Comment
 Skin was made to suit Windows 10 dark theme.
